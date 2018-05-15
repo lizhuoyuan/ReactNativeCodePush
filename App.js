@@ -16,7 +16,7 @@ import codePush from 'react-native-code-push';
 
 type Props = {};
 
-class App extends Component<Props> {
+export default class App extends Component<Props> {
 
     componentDidMount() {
         this.codePushUpdate()
@@ -87,7 +87,7 @@ class App extends Component<Props> {
                     Welcome to React Native CodePush2.1!
                 </Text>
                 <Text style={styles.instructions}>
-                   我是更新!
+                   我是更新hhhhhhhhhhh!
                 </Text>
                 <TouchableOpacity onPress={this.onButtonPress}>
                     <Text>Check for updates</Text>
@@ -116,5 +116,3 @@ const styles = StyleSheet.create({
         marginBottom: 5,
     },
 });
-
-export default codePush(App);
